@@ -5,7 +5,7 @@ st.set_page_config(layout='wide')
 
 st.header('Netflix')
 # Le o arquivo CSV em um DataFrame
-netflix_base_dataframe = pd.read_csv(r'C:\Users\Dell\Desktop\datasets\netflix\netflix_titles.csv')
+netflix_base_dataframe = pd.read_csv('netflix_titles.csv')
 
 # Converte 'date_added' para formato datetime
 netflix_base_dataframe['date_added'] = pd.to_datetime(netflix_base_dataframe['date_added'], errors='coerce')
